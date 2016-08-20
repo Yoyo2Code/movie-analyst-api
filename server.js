@@ -34,3 +34,18 @@ app.get('/reviewers', function(req, res){
   // Send the list of reviewers as a JSON array
   res.json(authors);
 })
+
+app.get('/publications', function(req, res){
+  // Get a list of publications
+  var publications = [
+    {name : 'The Daily Reviewer', avatar: 'glyphicon-eye-open'},
+    {name : 'International Movie Critic', avatar: 'glyphicon-fire'},
+    {name : 'MoviesNow', avatar: 'glyphicon-time'},
+    {name : 'MyNextReview', avatar: 'glyphicon-record'},
+    {name : 'Movies n\' Games', avatar: 'glyphicon-heart-empty'},
+    {name : 'TheOne', avatar : 'glyphicon-globe'},
+    {name : 'ComicBookHero.com', avatar : 'glyphicon-flash'}
+  ];
+
+  res.json(publications);
+})
