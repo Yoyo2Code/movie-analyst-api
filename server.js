@@ -59,3 +59,5 @@ app.get('/pending', function(req, res){
 
   res.send(pending);
 })
+
+app.listen(8080);
